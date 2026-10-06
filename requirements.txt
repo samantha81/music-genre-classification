@@ -1,0 +1,23 @@
+# ============================================================
+#  Music Genre Classification — Python Dependencies
+#  Install all: pip install -r requirements.txt
+# ============================================================
+
+# ── Core (required — app will not run without these) ────────
+torch==2.7.0
+torchaudio==2.7.0
+numpy>=1.24.0
+scikit-learn>=1.2.2
+soundfile>=0.12.0
+matplotlib>=3.7.0
+statsmodels>=0.14.0     # McNemar statistical significance test (Section 11)
+
+# ── Recommended (enables additional features) ───────────────
+seaborn>=0.12.0         # better confusion matrix heatmaps (Section 3)
+pandas>=2.0.0           # performance tables, genre-wise analysis (Sections 1, 7, 10, 12)
+librosa>=0.10.0         # waveform + mel plots in error analysis (Section 9)
+statsmodels>=0.14.0     # McNemar statistical significance test (Section 11)
+rich>=13.0.0            # coloured CLI output, panels, progress tables
+kagglehub>=0.2.0        # automatic GTZAN dataset download on first --train run
+streamlit>=1.30.0       # web application framework
+
